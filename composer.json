@@ -1,0 +1,31 @@
+{
+    "name": "candlefox/wordpress-composer",
+    "description": "Project for WordPress stack via Composer",
+    "authors": [
+        {
+            "name": "Robby",
+            "homepage": "https://www.candlefox.com/"
+        }
+    ],
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url" : "https://wpackagist.org"
+        }
+    ],
+    "require": {
+		"vlucas/phpdotenv": "*",
+        "johnpbloch/wordpress": "*",
+		"wpackagist-plugin/application-passwords": "*",
+		"wpackagist-plugin/black-studio-tinymce-widget": "*",
+		"wpackagist-plugin/featured-video-plus": "*",
+		"wpackagist-plugin/gdpr-cookie-compliance": "*",
+		"wpackagist-plugin/geoip-detect": "*",
+		"wpackagist-plugin/php-browser-detection": "*",
+		"wpackagist-theme/twentynineteen": "^1.4"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp-core"
+    }
+}
