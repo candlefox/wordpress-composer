@@ -49,7 +49,7 @@ function scripts(cb) {
 
 function watchAssets() {
 	browserSync.init({
-		proxy: 'composer.training.com.au'
+		proxy: 'dev.training.com.au'
 	});
 	watch(paths.scss, styles);
 	watch(paths.allJs, scripts);

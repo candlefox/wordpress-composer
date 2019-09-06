@@ -12,17 +12,18 @@
 		"slim/slim": "^3.12",
 		"defuse/php-encryption": "^2.2",
 		"johnpbloch/wordpress": "^5.2",
+		"wpackagist-plugin/acf-to-rest-api": "*",
 		"wpackagist-plugin/application-passwords": "*",
 		"wpackagist-plugin/black-studio-tinymce-widget": "*",
 		"wpackagist-plugin/featured-video-plus": "*",
 		"wpackagist-plugin/gdpr-cookie-compliance": "*",
 		"wpackagist-plugin/geoip-detect": "*",
-		"wpackagist-plugin/php-browser-detection": "*"
+		"wpackagist-plugin/php-browser-detection": "*",
+		"wpackagist-plugin/pods": "*"
 	},
 	"require-dev": {
-		"dealerdirect/phpcodesniffer-composer-installer": "*",
-		"wp-coding-standards/wpcs": "*",
-		"wpackagist-theme/twentynineteen": "*"
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+		"wp-coding-standards/wpcs": "^2.1"
 	},
 	"extra": {
 		"wordpress-install-dir": "wp"
