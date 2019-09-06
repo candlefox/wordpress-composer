@@ -1,31 +1,30 @@
 {
-    "name": "candlefox/wordpress-composer",
-    "description": "Project for WordPress stack via Composer",
-    "authors": [
-        {
-            "name": "Robby",
-            "homepage": "https://www.candlefox.com/"
-        }
-    ],
-    "type": "project",
-    "repositories": [
-        {
-            "type": "composer",
-            "url" : "https://wpackagist.org"
-        }
-    ],
-    "require": {
-		"vlucas/phpdotenv": "*",
-        "johnpbloch/wordpress": "*",
+	"name": "candlefox/wordpress-composer",
+	"description": "Candlefox Wordpress Composer",
+	"repositories": [
+		{
+			"type": "composer",
+			"url" : "https://wpackagist.org"
+		}
+	],
+	"require": {
+		"vlucas/phpdotenv": "^3.5",
+		"slim/slim": "^3.12",
+		"defuse/php-encryption": "^2.2",
+		"johnpbloch/wordpress": "^5.2",
 		"wpackagist-plugin/application-passwords": "*",
 		"wpackagist-plugin/black-studio-tinymce-widget": "*",
 		"wpackagist-plugin/featured-video-plus": "*",
 		"wpackagist-plugin/gdpr-cookie-compliance": "*",
 		"wpackagist-plugin/geoip-detect": "*",
-		"wpackagist-plugin/php-browser-detection": "*",
-		"wpackagist-theme/twentynineteen": "^1.4"
-    },
-    "extra": {
-        "wordpress-install-dir": "wp-core"
-    }
+		"wpackagist-plugin/php-browser-detection": "*"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "*",
+		"wp-coding-standards/wpcs": "*",
+		"wpackagist-theme/twentynineteen": "*"
+	},
+	"extra": {
+		"wordpress-install-dir": "wp"
+	}
 }

@@ -1,0 +1,13 @@
+{
+	"files.exclude": {
+		".vscode": true,
+		"composer.lock": true,
+		"node_modules": true,
+		"package-lock.json": true,
+		"vendor": true,
+		"wp": true,
+		"wp-content/uploads": true
+	},
+	"phpsab.standard": "WordPress-Core",
+	"phpsab.snifferMode": "onType"
+}

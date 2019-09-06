@@ -17,10 +17,12 @@
  *
  * @package WordPress
  */
- 
-require __DIR__ . '/vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::create( __DIR__ );
-$dotenv->load();
+
+if ( empty( $_ENV ) ) {
+	require __DIR__ . '/vendor/autoload.php';
+	$dotenv = Dotenv\Dotenv::create( __DIR__ );
+	$dotenv->load();
+}
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
@@ -71,7 +73,6 @@ $table_prefix = 'wp_';
 
 define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] );
 define( 'WP_SITEURL', WP_HOME . '/' . $_ENV['WP_CORE_DIR'] );
-
 
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/' . $_ENV['WP_CONTENT_DIR'] );
 define( 'WP_CONTENT_URL', WP_HOME . '/' . $_ENV['WP_CONTENT_DIR'] );

@@ -1,0 +1,35 @@
+{
+	"name": "candlefox-genesis-child-theme",
+	"description": "Candlefox Genesis Framework Child Theme",
+	"license": "ISC",
+	"repository": {},
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "*",
+		"browser-sync": "^2.26.7",
+		"eslint": "^6.3.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-sass": "^4.0.2",
+		"gulp-uglify": "^3.0.2"
+	},
+	"browserslist": [
+		"> 2%",
+		"last 2 versions",
+		"Firefox ESR"
+	],
+	"eslintConfig": {
+		"extends": "plugin:@wordpress/eslint-plugin/recommended",
+		"root": true,
+		"env": {
+			"browser": true
+		},
+		"globals": {
+			"jQuery": "readonly",
+			"wp": "readonly"
+		}
+	},
+	"scripts": {
+		"wp-init": "npm install && composer install"
+	}
+}
