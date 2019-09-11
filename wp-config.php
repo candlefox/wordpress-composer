@@ -12,6 +12,8 @@ define( 'DB_PASSWORD', $_ENV['DB_PASSWORD'] );
 define( 'DB_HOST', $_ENV['DB_HOST'] );
 define( 'DB_CHARSET', 'utf8' );
 
+$table_prefix = 'wp_';
+
 define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] );
 define( 'WP_SITEURL', WP_HOME . '/' . $_ENV['WP_CORE_DIR'] );
 

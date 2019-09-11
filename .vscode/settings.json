@@ -16,7 +16,7 @@
 	"files.insertFinalNewline": true,
 	"files.trimTrailingWhitespace": true,
 	"phpsab.standard": "WordPress-Core",
-	"phpsab.snifferMode": "onType"
+	"phpsab.snifferMode": "onType",
 	"css.lint.duplicateProperties": "error",
 	"css.lint.emptyRules": "error",
 	"css.lint.universalSelector": "warning",
